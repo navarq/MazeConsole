@@ -335,7 +335,7 @@ namespace maze
 
 		private void setPath()
 		{
-			Node node = mazeMatrix[endPoint.height][endPoint.width];
+			Node node = mazeMatrix[endPoint.width][endPoint.height];
 
 			while (node.parent != null && node.parent.type != NodeType.NODE_START)
 			{
